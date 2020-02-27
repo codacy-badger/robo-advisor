@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Robo-Advisor!</title>
-    <script src="app.js"></script>
     <link rel="stylesheet" href="styles.css">
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
 </head>
 
-<div class="form-style-8">
-    <h2>Robo-Advisor</h2>
-    <form>
-        <!--
+<body>
+
+    <div class="form-style-8">
+        <h2>Robo-Advisor</h2>
+        <form>
+            <!--
             REQUIRED FIELDS
             What is your age?
             What is your current income?
@@ -22,23 +23,33 @@
             How many kids do you have/plan to have?
             Do you own a house or plan to buy one?
         -->
-        <label for="age">What is your age?</label>
-        <input type="number" name="age" placeholder="Age"/>
-        <label for="current-income">What is your current income?</label>
-        <input type="number" name="current-income" placeholder="Current Income" />
-        <label for="married">Are you married?</label>
-            <input type="radio" name="married" value="yes">Yes</input>
-            <input type="radio" name="married" value="no" checked>No</input>
-        <div id="spouse">
-            <label for="spouse-income" >If married, what is your spouse's income?</label>
-            <input type="number" name="spouse-income" placeholder="Spouse's Income">
-        </div>
-        <!-- <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea> -->
-        <!-- <input type="button" value="Send Message" /> -->
-    </form>
-</div>
+            <div id="age">
+                <label for="age">What is your age?</label>
+                <input type="number" name="age" placeholder="Age" />
+            </div>
 
-<body>
+            <div>
+                <label for="current-income">What is your current income?</label>
+                <input type="number" name="current-income" placeholder="Current Income" />
+            </div>
+
+            <div>
+                <label for="married">Are you married?</label>
+                <input type="radio" name="married" value="yes">Yes</input>
+                <input type="radio" name="married" value="no" checked>No</input>
+            </div>
+
+            <div id="spouse">
+                <br>
+                <label for="spouse-income">What is your spouse's income?</label>
+                <input id="spouse" type="number" name="spouse-income" placeholder="Spouse's Income">
+            </div>
+            <!-- <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea> -->
+            <!-- <input type="button" value="Send Message" /> -->
+        </form>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
