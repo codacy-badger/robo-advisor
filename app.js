@@ -23,3 +23,7 @@ function adjust_textarea(h) {
     h.style.height = "20px";
     h.style.height = (h.scrollHeight) + "px";
 }
+
+function asset_allocation() {
+    console.log("entered the asset allocatoin function")
+}
