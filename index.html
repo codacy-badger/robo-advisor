@@ -14,13 +14,13 @@
         <form>
             <!--
             REQUIRED FIELDS
-            What is your age?
-            What is your current income?
-            Are you married?
-            Is your spouse working. If so, what is their income?
-            At what age do you want to retire?
-            What is your target retirement savings amount?
-            How many kids do you have/plan to have?
+                What is your age?
+                What is your current income?
+                Are you married?
+                Is your spouse working. If so, what is their income?
+                At what age do you want to retire?
+                What is your target retirement savings amount?
+                How many kids do you have/plan to have?
             Do you own a house or plan to buy one?
         -->
             <div id="age">
@@ -28,15 +28,16 @@
                 <input type="number" name="age" placeholder="Age" />
             </div>
 
-            <div>
+            <div id="current-income">
                 <label for="current-income">What is your current income?</label>
                 <input type="number" name="current-income" placeholder="Current Income" />
             </div>
 
-            <div>
+            <div id="married">
                 <label for="married">Are you married?</label>
                 <input type="radio" name="married" value="yes">Yes</input>
                 <input type="radio" name="married" value="no" checked>No</input>
+                <br id="spacing"><br>
             </div>
 
             <div id="spouse">
@@ -44,8 +45,33 @@
                 <label for="spouse-income">What is your spouse's income?</label>
                 <input id="spouse" type="number" name="spouse-income" placeholder="Spouse's Income">
             </div>
+
+            <div id="retire">
+                <label for="retire">What age do you plan to retire?</label>
+                <input type="number" name="retire" placeholder="Retirement Age" />
+            </div>
+
+            <div id="savings">
+                <label for="savings">What is your target retirement savings amount?</label>
+                <input type="number" name="savings" placeholder="Retirement Savings Amount" />
+            </div>
+
+            <div id="kids">
+                <label for="kids">How many kids to have/plan to have?</label>
+                <input type="number" name="kids" placeholder="Number of Kids" />
+            </div>
+
+            <div id="house">
+                <label for="house">Do you own/plan to own a house?</label>
+                <input type="radio" name="house" value="yes">Yes</input>
+                <input type="radio" name="house" value="no" checked>No</input>
+                <br>
+            </div>
+
             <!-- <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea> -->
-            <!-- <input type="button" value="Send Message" /> -->
+            <br><br>
+            <input type="button" value="Submit" onclick="alert('Form submitted')"/>
+
         </form>
     </div>
 

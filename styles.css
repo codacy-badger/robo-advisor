@@ -19,6 +19,11 @@
 	padding: 20px;
 	margin: -30px -30px 30px -30px;
 }
+
+label {
+	font-weight: 550;
+}
+
 .form-style-8 input[type="text"],
 .form-style-8 input[type="date"],
 .form-style-8 input[type="datetime"],
@@ -51,11 +56,11 @@
 }
 .form-style-8 input[type="button"], 
 .form-style-8 input[type="submit"]{
-	-moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
-	-webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
-	box-shadow: inset 0px 1px 0px 0px #45D6D6;
-	background-color: #2CBBBB;
-	border: 1px solid #27A0A0;
+	-moz-box-shadow: inset 0px 1px 0px 0px rgb(214, 69, 69);
+	-webkit-box-shadow: inset 0px 1px 0px 0px rgb(214, 69, 69);
+	box-shadow: inset 0px 1px 0px 0px rgb(214, 69, 69);
+	background-color: rgb(187, 44, 44);
+	border: 1px solid rgb(160, 39, 39);
 	display: inline-block;
 	cursor: pointer;
 	color: #FFFFFF;
@@ -67,6 +72,6 @@
 }
 .form-style-8 input[type="button"]:hover, 
 .form-style-8 input[type="submit"]:hover {
-	background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
-	background-color:#34CACA;
+	background:linear-gradient(to bottom, rgb(202, 52, 52) 5%, rgb(201, 48, 48) 100%);
+	background-color:rgb(202, 52, 52);
 }

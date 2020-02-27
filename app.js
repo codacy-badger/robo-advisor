@@ -9,9 +9,11 @@ $("input[type = radio]").change(function () {
     if (radioValue === "yes") {
         // console.log("YES")
         $('#spouse').show();
+        $('#spacing').hide();
     } else {
         // console.log("NO")
         $('#spouse').hide();
+        $('#spacing').show();
     }
 })
 
