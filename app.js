@@ -35,6 +35,7 @@ function asset_allocation() {
     var house = $('input[name="house"]:checked').val();
 
     var ytr = retireAge - age;
+    // zf to fold, za to expand folds
     if (ytr <= -10) {
         //pass
     } else if (ytr >= -10 && ytr < -5) {

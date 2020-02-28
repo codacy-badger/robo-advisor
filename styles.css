@@ -70,7 +70,6 @@ label {
 	font-weight: 125;
 	padding: 8px 18px;
 	text-decoration: none;
-	text-transform: uppercase;
 }
 .form-style input[type="button"]:hover, 
 .form-style input[type="submit"]:hover {
