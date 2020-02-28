@@ -1,4 +1,4 @@
-.form-style-8{
+.form-style{
 	font-family: 'Open Sans Condensed', arial, sans;
 	width: 500px;
 	padding: 30px;
@@ -9,7 +9,7 @@
 	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
 
 }
-.form-style-8 h2{
+.form-style h2{
 	/* background: #CD5360; */
 	background-image: linear-gradient(125deg, #286DA8, #286DA8 60%, whitesmoke);
 	text-transform: uppercase;
@@ -25,17 +25,17 @@ label {
 	font-weight: 550;
 }
 
-.form-style-8 input[type="text"],
-.form-style-8 input[type="date"],
-.form-style-8 input[type="datetime"],
-.form-style-8 input[type="email"],
-.form-style-8 input[type="number"],
-.form-style-8 input[type="search"],
-.form-style-8 input[type="time"],
-.form-style-8 input[type="url"],
-.form-style-8 input[type="password"],
-.form-style-8 textarea,
-.form-style-8 select 
+.form-style input[type="text"],
+.form-style input[type="date"],
+.form-style input[type="datetime"],
+.form-style input[type="email"],
+.form-style input[type="number"],
+.form-style input[type="search"],
+.form-style input[type="time"],
+.form-style input[type="url"],
+.form-style input[type="password"],
+.form-style textarea,
+.form-style select 
 {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -51,12 +51,12 @@ label {
 	font: 16px Arial, Helvetica, sans-serif;
 	height: 45px;
 }
-.form-style-8 textarea{
+.form-style textarea{
 	resize:none;
 	overflow: hidden;
 }
-.form-style-8 input[type="button"], 
-.form-style-8 input[type="submit"]{
+.form-style input[type="button"], 
+.form-style input[type="submit"]{
 	-moz-box-shadow: inset 0px 1px 0px 0px #3B8BEB;
 	-webkit-box-shadow: inset 0px 1px 0px 0px #3B8BEB;
 	box-shadow: inset 0px 1px 0px 0px #3B8BEB;
@@ -72,8 +72,8 @@ label {
 	text-decoration: none;
 	text-transform: uppercase;
 }
-.form-style-8 input[type="button"]:hover, 
-.form-style-8 input[type="submit"]:hover {
+.form-style input[type="button"]:hover, 
+.form-style input[type="submit"]:hover {
 	background:linear-gradient(to bottom, #286DA8 , #438496  200%);
 	background-color:#286DA8;
 }
