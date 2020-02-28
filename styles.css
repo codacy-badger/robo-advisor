@@ -10,12 +10,13 @@
 
 }
 .form-style-8 h2{
-	background: #4D4D4D;
+	/* background: #CD5360; */
+	background-image: linear-gradient(125deg, #286DA8, #286DA8 60%, whitesmoke);
 	text-transform: uppercase;
 	font-family: 'Open Sans Condensed', sans-serif;
-	color: #cacaca;
-	font-size: 18px;
-	font-weight: 100;
+	color: whitesmoke;
+	font-size: 24px;
+	font-weight: 125;
 	padding: 20px;
 	margin: -30px -30px 30px -30px;
 }
@@ -56,22 +57,23 @@ label {
 }
 .form-style-8 input[type="button"], 
 .form-style-8 input[type="submit"]{
-	-moz-box-shadow: inset 0px 1px 0px 0px rgb(214, 69, 69);
-	-webkit-box-shadow: inset 0px 1px 0px 0px rgb(214, 69, 69);
-	box-shadow: inset 0px 1px 0px 0px rgb(214, 69, 69);
-	background-color: rgb(187, 44, 44);
-	border: 1px solid rgb(160, 39, 39);
+	-moz-box-shadow: inset 0px 1px 0px 0px #3B8BEB;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3B8BEB;
+	box-shadow: inset 0px 1px 0px 0px #3B8BEB;
+	background-color: #286DA8;
+	border: 1px solid #286DD1;
 	display: inline-block;
 	cursor: pointer;
 	color: #FFFFFF;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 14px;
+	font-weight: 125;
 	padding: 8px 18px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 .form-style-8 input[type="button"]:hover, 
 .form-style-8 input[type="submit"]:hover {
-	background:linear-gradient(to bottom, rgb(202, 52, 52) 5%, rgb(201, 48, 48) 100%);
-	background-color:rgb(202, 52, 52);
+	background:linear-gradient(to bottom, #286DA8 , #438496  200%);
+	background-color:#286DA8;
 }
