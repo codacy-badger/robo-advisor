@@ -36,6 +36,7 @@ function asset_allocation() {
 
     var ytr = retireAge - age;
     // zf to fold, za to expand folds
+    // :mkview to save folds, :loadview to view
     if (ytr <= -10) {
         //pass
     } else if (ytr >= -10 && ytr < -5) {
