@@ -1,19 +1,19 @@
-window.$ = window.jQuery = require('jquery');
+window.$ = window.jQuery = require("jquery");
 
 // console.log( $("input[type = radio]:checked").val() )
-$('#spouse').hide()
+$("#spouse").hide()
 
-$('input[type = radio]').change(function () {
+$("input[type = radio]").change(function () {
     var radioValue = $("input[type = 'radio']:checked").val();
     // console.log(typeof(radioValue))
     if (radioValue === "yes") {
         // console.log("YES")
-        $('#spouse').show();
-        $('#spacing').hide();
+        $("#spouse").show();
+        $("#spacing").hide();
     } else {
         // console.log("NO")
-        $('#spouse').hide();
-        $('#spacing').show();
+        $("#spouse").hide();
+        $("#spacing").show();
     }
 })
 
@@ -24,14 +24,14 @@ function adjust_textarea(h) {
     h.style.height = (h.scrollHeight) + "px";
 }
 
-function asset_allocation() {
-    var age = parseInt($('input[name="age"]').val());
+function assetAllocation() {
+    var age = parseInt($('input[name="age"]').val(), 10);
     var currentIncome = parseInt($('input[name="current-income"]').val());
     var married = $('input[name="married"]:checked').val();
-    var spouseIncome = parseInt($('input[name="spouse-income"]').val());
-    var retireAge = parseInt($('input[name="retire"]').val());
-    var savingsAmt = parseInt($('input[name="savings"]').val());
-    var kids = parseInt($('input[name="kids"]').val());
+    var spouseIncome = parseInt($('input[name="spouse-income"]').val(), 10);
+    var retireAge = parseInt($('input[name="retire"]').val(), 10);
+    var savingsAmt = parseInt($('input[name="savings"]').val(), 10);
+    var kids = parseInt($('input[name="kids"]').val(), 10);
     var house = $('input[name="house"]:checked').val();
 
     var ytr = retireAge - age;
