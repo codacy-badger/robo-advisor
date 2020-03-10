@@ -1,7 +1,7 @@
 window.$ = window.jQuery = require("jquery");
 
 // console.log( $("input[type = radio]:checked").val() )
-$("#spouse").hide()
+$("#spouse").hide();
 
 $("input[type = radio]").change(function () {
     var radioValue = $("input[type = 'radio']:checked").val();
@@ -15,18 +15,18 @@ $("input[type = radio]").change(function () {
         $("#spouse").hide();
         $("#spacing").show();
     }
-})
+});
 
 
 //auto expand textarea
-function adjust_textarea(h) {
+function adjustTextarea(h) {
     h.style.height = "20px";
     h.style.height = (h.scrollHeight) + "px";
 }
 
 function assetAllocation() {
     var age = parseInt($('input[name="age"]').val(), 10);
-    var currentIncome = parseInt($('input[name="current-income"]').val());
+    var currentIncome = parseInt($('input[name="current-income"]').val(), 10);
     var married = $('input[name="married"]:checked').val();
     var spouseIncome = parseInt($('input[name="spouse-income"]').val(), 10);
     var retireAge = parseInt($('input[name="retire"]').val(), 10);
@@ -37,29 +37,40 @@ function assetAllocation() {
     var ytr = retireAge - age;
     // zf to fold, za to expand folds
     // :mkview to save folds, :loadview to view
-    if (ytr <= -10) {
-        //pass
-    } else if (ytr >= -10 && ytr < -5) {
-        //pass
-    } else if (ytr >= -5 && ytr < 0) {
-        //pass
-    } else if (ytr >= 0 && ytr < 5) {
-        //pass
-    } else if (ytr >= 5 && ytr < 10) {
-        //pass
-    } else if (ytr >= 10 && ytr < 15) {
-        //pass
-    } else if (ytr >= 15 && ytr < 20) {
-        //pass
-    } else if (ytr >= 20 && ytr < 25) {
-        //pass
-    } else if (ytr >= 25 && ytr < 30) {
-        //pass
-    } else if (ytr >= 30 && ytr < 35) {
-        //pass
-    } else if (ytr >= 35 && ytr < 40) {
-        //pass
-    } else {
-        //pass
+
+    switch (true) {
+        case (ytr >= -10): 
+            //pass
+            break;
+        case (ytr >= -5):
+            //pass
+            break;
+        case (ytr >= 0):
+            //pass
+            break;
+        case (ytr >= 5):
+            //pass
+            break;
+        case (ytr >= 10):
+            //pass
+            break;
+        case (ytr >= 15):
+            //pass
+            break;
+        case (ytr >= 20):
+            //pass
+            break;
+        case (ytr >= 25):
+            //pass
+            break;
+        case (ytr >= 30):
+            //pass
+            break;
+        case (ytr >= 35):
+            //pass
+            break;
+        case (ytr >= 40):
+            //pass
+            break;
     }
 }
